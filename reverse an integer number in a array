@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+int n, i, a[10], rev=0, rem, b[10], num;
+  printf("Enter the size of an array:\n");
+  scanf("%d",&n);
+  printf("Enter the elements in a array:");
+  for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+  for(i=0;i<n;i++0)
+    {
+    num=a[i];
+     while(num!=0)
+       {
+      rem=num%10;
+      rev=rev*10+rem;
+      num=num/10;
+       }
+    b[i]=rev;
+    }
+  for(i=0;i<n;i++)
+    scanf("%d",&b[i]);
+  }
